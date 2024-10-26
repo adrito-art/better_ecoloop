@@ -1,0 +1,27 @@
+/* src/JoinTeam.css */
+
+.join-team-container {
+    background-color: #1a202c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    min-height: 100vh;
+  }
+  
+  .join-button {
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #D5ED9F;
+    color: black;
+    border: none;
+    margin-top: 20px;
+  }
+  
+  .join-button:hover {
+    background-color: #b0e27a;
+    transform: scale(1.05);
+  }
+  

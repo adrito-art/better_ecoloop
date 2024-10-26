@@ -1,0 +1,96 @@
+/* Full page styling */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+/* Navigation bar styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #5d4037;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  z-index: 2; /* Ensures it stays on top of most content */
+}
+
+/* Form container styling to ensure it stays above the rest of the elements */
+.register-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for contrast */
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center; /* Ensure form and buttons are centered */
+  z-index: 10; /* Higher z-index to stay above the navbar */
+}
+
+/* Keyframes for background gradient animation */
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Title for the form */
+.register-title {
+  color: #8d6e63; /* Matching theme color */
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center; /* Make sure "Create an Account" title is centered */
+}
+
+/* Form styling remains unchanged except for centering and animation consistency */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.register-label {
+  color: #5d4037;
+  font-size: 16px;
+}
+
+.register-input {
+  width: calc(100% - 20px);
+  padding: 12px;
+  border: 1px solid #c7bdb5;
+  border-radius: 6px;
+  transition: box-shadow 0.3s ease;
+}
+
+.register-input:focus {
+  border-color: #8d6e63;
+  box-shadow: 0px 0px 8px rgba(141, 110, 99, 0.3);
+  outline: none;
+}
+
+.register-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #8d6e63;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #755548;
+}
+
+/* Styling for any messages displayed */
+.register-message {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-top: 10px;
+}

@@ -1,0 +1,49 @@
+/* Ensure the page and container are scrollable */
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: auto; /* Allows scrolling when content exceeds page height */
+  }
+  
+  .daily-questionnaire-container {
+    min-height: 100vh; /* Take up at least the viewport height */
+    padding: 20px;
+    background-color: #f0f0f0;
+    overflow: auto; /* Allow the content to scroll */
+  }
+  
+  .questionnaire-form-container {
+    background: #fff;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto; /* Centers the form */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .question-container {
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
